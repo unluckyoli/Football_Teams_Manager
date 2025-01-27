@@ -1,0 +1,27 @@
+.success-page, .error-page {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.success-page h2 {
+    color: green;
+}
+
+.error-page h2 {
+    color: red;
+}
+
+.success-page p, .error-page p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.success-page a, .error-page a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.success-page a:hover, .error-page a:hover {
+    text-decoration: underline;
+}

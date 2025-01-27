@@ -1,0 +1,50 @@
+/*DLA EXPRESSA*/
+.result {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.result h3 {
+    color: #3063aa;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.result p {
+    font-size: 16px;
+    color: #232323;
+    margin-bottom: 10px;
+}
+
+
+
+/*OneClub i Details*/
+.details-link {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.details-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+
+.delete-button {
+    color: white;
+    background-color: red;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+.delete-button:hover {
+    background-color: darkred;
+}

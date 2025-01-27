@@ -1,0 +1,42 @@
+/* MAIN */
+
+.home-container {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.home-description {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.App {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+.app-main {
+    flex: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+

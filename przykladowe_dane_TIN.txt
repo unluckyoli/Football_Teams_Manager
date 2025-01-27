@@ -1,0 +1,101 @@
+INSERT INTO club (name, country, city, league, position) VALUES
+('FC Barcelona', 'Spain', 'Barcelona', 'La Liga', 1),
+('Real Madrid', 'Spain', 'Madrid', 'La Liga', 2),
+('Atletico Madrid', 'Spain', 'Madrid', 'La Liga', 3),
+('Bayern Munich', 'Germany', 'Munich', 'Bundesliga', 1),
+('Borussia Dortmund', 'Germany', 'Dortmund', 'Bundesliga', 2),
+('Manchester United', 'England', 'Manchester', 'Premier League', 3),
+('Manchester City', 'England', 'Manchester', 'Premier League', 1),
+('Chelsea', 'England', 'London', 'Premier League', 4),
+('Paris Saint-Germain', 'France', 'Paris', 'Ligue 1', 1),
+('Lille OSC', 'France', 'Lille', 'Ligue 1', 2),
+('Juventus', 'Italy', 'Turin', 'Serie A', 4),
+('AC Milan', 'Italy', 'Milan', 'Serie A', 1),
+('Inter Milan', 'Italy', 'Milan', 'Serie A', 2),
+('Ajax', 'Netherlands', 'Amsterdam', 'Eredivisie', 1),
+('PSV Eindhoven', 'Netherlands', 'Eindhoven', 'Eredivisie', 2),
+('Benfica', 'Portugal', 'Lisbon', 'Primeira Liga', 1),
+('Porto', 'Portugal', 'Porto', 'Primeira Liga', 2),
+('Celtic', 'Scotland', 'Glasgow', 'Scottish Premiership', 1),
+('Rangers', 'Scotland', 'Glasgow', 'Scottish Premiership', 2),
+('Galatasaray', 'Turkey', 'Istanbul', 'Super Lig', 1);
+
+
+
+
+INSERT INTO football_match (home_team_id, away_team_id, date, score) VALUES
+(1, 2, '2023-08-15', '3-1'),
+(3, 4, '2023-08-16', '2-2'),
+(5, 6, '2023-08-17', '1-3'),
+(7, 8, '2023-08-18', '0-0'),
+(9, 10, '2023-08-19', '4-0'),
+(11, 12, '2023-08-20', '2-1'),
+(13, 14, '2023-08-21', '1-1'),
+(15, 16, '2023-08-22', '0-2'),
+(17, 18, '2023-08-23', '3-0'),
+(19, 20, '2023-08-24', '1-4'),
+(1, 5, '2023-09-01', '2-3'),
+(2, 6, '2023-09-02', '1-2'),
+(3, 7, '2023-09-03', '0-0'),
+(4, 8, '2023-09-04', '3-2'),
+(9, 11, '2023-09-05', '2-2'),
+(10, 12, '2023-09-06', '1-1'),
+(13, 15, '2023-09-07', '0-3'),
+(14, 16, '2023-09-08', '4-1'),
+(17, 19, '2023-09-09', '2-2'),
+(18, 20, '2023-09-10', '3-0');
+
+
+
+
+INSERT INTO football_player (name, surname, nationality, position, club_id) VALUES
+('Lionel', 'Messi', 'Argentina', 'Forward', 1),
+('Cristiano', 'Ronaldo', 'Portugal', 'Forward', 2),
+('Robert', 'Lewandowski', 'Poland', 'Forward', 3),
+('Kevin', 'De Bruyne', 'Belgium', 'Midfielder', 4),
+('Luka', 'Modric', 'Croatia', 'Midfielder', 5),
+('Virgil', 'van Dijk', 'Netherlands', 'Defender', 6),
+('Harry', 'Kane', 'England', 'Forward', 7),
+('Erling', 'Haaland', 'Norway', 'Forward', 8),
+('Kylian', 'Mbappe', 'France', 'Forward', 9),
+('Neymar', 'Junior', 'Brazil', 'Forward', 9),
+('Sergio', 'Ramos', 'Spain', 'Defender', 10),
+('Paulo', 'Dybala', 'Argentina', 'Forward', 11),
+('Zlatan', 'Ibrahimovic', 'Sweden', 'Forward', 12),
+('Andre', 'Onana', 'Cameroon', 'Goalkeeper', 13),
+('Dusan', 'Tadic', 'Serbia', 'Forward', 14),
+('Cody', 'Gakpo', 'Netherlands', 'Forward', 15),
+('Joao', 'Felix', 'Portugal', 'Forward', 16),
+('Pepe', 'Luiz', 'Portugal', 'Defender', 17),
+('Callum', 'McGregor', 'Scotland', 'Midfielder', 18),
+('James', 'Tavernier', 'Scotland', 'Defender', 19);
+
+
+
+
+
+INSERT INTO player_match (player_id, match_id, goals_scored, minutes_played, rating) VALUES
+(1, 1, 2, 90, 9.5),
+(2, 2, 1, 85, 8.8),
+(3, 3, 3, 90, 9.7),
+(4, 4, 0, 75, 7.4),
+(5, 5, 1, 90, 8.1),
+(6, 6, 0, 90, 7.5),
+(7, 7, 2, 90, 9.0),
+(8, 8, 1, 90, 8.5),
+(9, 9, 3, 90, 9.3),
+(10, 10, 0, 70, 7.0),
+(11, 11, 1, 90, 8.0),
+(12, 12, 2, 90, 9.0),
+(13, 13, 0, 60, 6.8),
+(14, 14, 1, 90, 8.7),
+(15, 15, 0, 90, 7.3),
+(16, 16, 2, 90, 9.2),
+(17, 17, 0, 80, 7.4),
+(18, 18, 1, 90, 8.1),
+(19, 19, 3, 90, 9.8),
+(20, 20, 0, 90, 7.0);
+
+
+
+

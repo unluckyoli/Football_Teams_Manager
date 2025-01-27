@@ -1,0 +1,95 @@
+-- baza danych
+
+CREATE DATABASE IF NOT EXISTS footballdb CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE footballdb;
+
+
+
+
+
+-- Tworzenie tabeli club
+CREATE TABLE IF NOT EXISTS club (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(40) NOT NULL,
+    country VARCHAR(40) NOT NULL,
+    city VARCHAR(40) NOT NULL,
+    league VARCHAR(40) NOT NULL,
+    position INT NOT NULL
+) 
+
+
+
+
+
+
+
+-- Tworzenie tabeli football_match
+CREATE TABLE IF NOT EXISTS football_match (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    home_team_id INT NOT NULL,
+    away_team_id INT NOT NULL,
+    date DATE NOT NULL,
+    score VARCHAR(10) NOT NULL,
+    FOREIGN KEY (home_team_id) REFERENCES club(Id) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (away_team_id) REFERENCES club(Id) ON DELETE CASCADE ON UPDATE CASCADE
+) 
+
+
+
+
+
+
+
+
+-- Tworzenie tabeli football_player
+CREATE TABLE IF NOT EXISTS football_player (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    surname VARCHAR(100) NOT NULL,
+    nationality VARCHAR(20) NOT NULL,
+    position VARCHAR(30) NOT NULL,
+    club_id INT,
+    FOREIGN KEY (club_id) REFERENCES club(Id) ON DELETE CASCADE ON UPDATE CASCADE
+) 
+
+
+
+
+
+-- Tworzenie tabeli player_match
+CREATE TABLE IF NOT EXISTS player_match (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    player_id INT NULL,
+    match_id INT NULL,
+    goals_scored INT NOT NULL DEFAULT 0,
+    minutes_played INT NOT NULL DEFAULT 0,
+    rating DOUBLE(5,2) NOT NULL DEFAULT 0.00,
+    FOREIGN KEY (player_id) REFERENCES football_player(Id) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (match_id) REFERENCES football_match(Id) ON DELETE CASCADE ON UPDATE CASCADE
+) 
+
+
+
+
+
+
+-- Tworzenie tabeli sessions
+CREATE TABLE IF NOT EXISTS sessions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    sessionId VARCHAR(255) NOT NULL,
+    userId INT NOT NULL,
+    createdAt DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (userId) REFERENCES users(id) ON DELETE CASCADE ON UPDATE CASCADE
+)
+
+
+
+
+-- Tworzenie tabeli users
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    password VARCHAR(100) NOT NULL
+) 
+
+

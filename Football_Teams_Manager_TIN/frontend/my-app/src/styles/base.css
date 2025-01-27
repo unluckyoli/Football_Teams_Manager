@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+    min-height: 100vh;
+    height: 100%;
+    margin: 0;
+}
+
+
+/*PRZYCISKI PAGINACJI*/
+button {
+    background-color: #3063aa;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #5f9ea0;
+    transform: translateY(-2px);
+}
+
